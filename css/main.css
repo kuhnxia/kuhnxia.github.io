@@ -1,0 +1,124 @@
+/*
+I apply css property to the html elements 
+from the top to the bottom of the webpage
+and from outside containers to inside cotainers.
+*/
+
+/*
+Some the use of css property from w3schools
+URL: https://www.w3schools.com/css/default.asp
+Date accessed: February 06, 2021
+I find w3shools/css is a useful website and all the css property are in order.
+It is easier to check than lecture videos and zybooks when I am not sure the use of some property.
+*/
+
+/*
+This code part is about the layout of header
+1 set backgound color to steel blue.
+2 set text color to white.
+3 set text align to center.
+4 set links to yellow.
+5 set a padding on the top.
+*/
+header {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+     padding-top: 10px;
+}
+header a {
+    color: yellow;
+}
+/*
+This code part is about the layout of nav in header.
+1 set nav background color to black.
+2 set the heading, unordered list, lists to inline block.
+3 set the left padding of unordered list to 0.
+4 remove the style type of lists.
+5 leave spaces between lists.
+*/
+header nav {
+    background-color: black;
+}
+nav > h2 {
+    display: inline-block;
+    padding: 10px;
+}
+nav ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+ul li {
+    display: inline-block;
+    padding: 10px;
+    
+}
+
+/*
+This code part about the view of main content.
+Set the margin to auto the width to 80vw
+So it look like in the center of the webpage no matter how the browser grows or shrinks.
+*/
+main {
+    margin: auto;
+    width: 80vw;
+}
+
+
+
+/*
+This part code is about the layout of featured news section.
+1 set the text of all headings to center.
+2 set two articles the same relative width
+3 set article 1 to the left of article 2 and leave a space between them.
+4 set the image in the article 1 to the right of the paragraph and leave a space between them.
+5 All the width is relative width.
+*/
+
+/*
+I found article 2 could not float to the right until I set overflow:auto to it.
+Maybe the article 2 content is too big to fit into the area when to the right.
+Rashmi Chandy tried to help me. But I settled down it before we had a meeting.
+Anyway, I very much appreciate her help.
+*/
+.heading {
+    text-align: center;
+}
+#f-news1 {
+    float: left;
+    width: 39vw;
+    padding-right: 1vw;
+    
+}
+#f-news2 {
+    
+    width: 39vw;
+    padding-left: 1vw;
+    overflow: auto;
+}
+img {
+    float:right;
+    width: 23vw;
+    padding-left: 0.5vw;
+}
+#f-news1 p {
+    width: 15vw;
+    padding-right: 0.5vw;
+}
+
+/*
+This code part is about layout of footer.
+1 set backgroud color to black.
+2 leave spaces on the top and buttom of footer.
+3 leave a space on the left of the paragraph
+4 set text color to blue.
+*/
+footer {
+    background-color: black;
+    padding: 20px 0 20px 0;
+}
+footer p {
+    color: white;
+    padding: 5px;
+}
