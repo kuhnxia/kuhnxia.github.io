@@ -183,7 +183,11 @@ the element wiil show follow style.
 
         /* use grid to display elements in f-news1 */
         display: grid;
-        grid-template-rows: repeat(3, auto);
+        /* 
+        I would like use "repeat(3, auto)" here, but it failed to be recognized by Safari.
+        So I decided to use fixed heights that were gotten from Firefox:inspector:computed.
+        */
+        grid-template-rows: 59px 61px auto;
         grid-template-columns: repeat(2, auto);
         
     }
